@@ -24,7 +24,7 @@ h1{
     top:0;
     bottom:0; 
 }
-.top h1, p{
+.top h1, .top p{
     color: #FFFFFF;
 }
 .top p{
