@@ -79,18 +79,20 @@ h3{
     z-index: -1;
 }
 
-.select-items > img{
+.scroll-items img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
 }
 
-.select-items ion-icon{
+/*
+ion-icon{
     position: absolute;
     right: 15px;
     bottom: 15px;
     color: #32B72F;
 }
+*/
 
 /*Estilo dos textos dentro do select-items*/
 
@@ -144,10 +146,20 @@ h3{
 /*Selecionar prato JS*/
 
 
-.select{
+.select1{
     border: 5px solid #32B72F;
+    border-radius: 9px;
 }
 
+.select2{
+    border: 5px solid #32B72F;
+    border-radius: 9px;
+}
+
+.select3{
+    border: 5px solid #32B72F;
+    border-radius: 9px;
+}
 
 /*classe de esconder*/
 .hidden{
