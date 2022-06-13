@@ -85,19 +85,45 @@ h3{
     border-radius: 4px;
 }
 
-/*
 ion-icon{
+    opacity: 0;
+}
+
+.select1 ion-icon{
+    width: 16px;
+    height: 16px;
     position: absolute;
     right: 15px;
     bottom: 15px;
     color: #32B72F;
+    opacity: 100;
 }
-*/
+
+.select2 ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #32B72F;
+    opacity: 100;
+}
+
+.select3 ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #32B72F;
+    opacity: 100;
+}
+
 
 /*Estilo dos textos dentro do select-items*/
 
-.select-items h3,
-.select-items h4{
+.select-food h3,
+.select-food h4{
     padding: 15px 10px 0 0;
 }
 
@@ -126,17 +152,30 @@ ion-icon{
     background-color: #FFFFFF;
 }
 
-.order-box > button{
+.finalizeOrder{
     width: 90%;
     height: 70%;
     border: none;
     border-radius: 50px;
-    background-color: #CBCBCB;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     padding: 0% 20% 0% 20%;
+    background-color: #32B72F;
 }
+
+.finalizeIncomplete{
+    width: 90%;
+    height: 70%;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 0% 20% 0% 20%;
+    background-color: #CBCBCB;
+}
+
 
 .order-box button:nth-child(2){
     background-color: #32B72F;
@@ -165,3 +204,5 @@ ion-icon{
 .hidden{
     display: none;
 }
+
+

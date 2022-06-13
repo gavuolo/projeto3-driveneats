@@ -12,7 +12,7 @@ function onClick1(span){
      quantidade += 1;
     }
     
-    oi(quantidade);
+    FinalizarPedido(quantidade);
 }
 
 function onClick2(span){ 
@@ -27,7 +27,7 @@ function onClick2(span){
      quantidade += 1;
     }
 
-    oi(quantidade);
+    FinalizarPedido(quantidade);
 }
 
 function onClick3(span){ 
@@ -42,19 +42,49 @@ function onClick3(span){
     quantidade += 1;
     }
 
-    oi(quantidade);
+    FinalizarPedido(quantidade);
 }
 
 
-let botao = document.querySelector(".finalize-order")
+let botao = document.querySelector(".finalizeIncomplete");
+let botao2 = document.querySelector(".finalizeOrder");
+let total = 0;
 
-function oi(quantidade){
-    
-    console.log(quantidade);
+function FinalizarPedido(quantidade){
 
     if (quantidade == 3) {
-        botao.innerHTML = "Fechar pedido";
+        botao.classList.add("hidden");
+        botao2.classList.remove("hidden");
+
+        let valor1 = document.querySelector(".select1 .valor").innerHTML;
+        let valor2 = document.querySelector(".select2 .valor").innerHTML;
+        let valor3 = document.querySelector(".select3 .valor").innerHTML;
+
+        let convertedValue1 = Number(valor1.replace(",","."));
+        let convertedValue2 = Number(valor2.replace(",",".")); 
+        let convertedValue3 = Number(valor3.replace(",","."));
+
+        total = convertedValue1 + convertedValue2 + convertedValue3;
+        total = total.toFixed(2);
+
     } else {
-       botao.innerHTML = "Selecione os 3 itens para fechar o pedido"
+       botao.classList.remove("hidden");
+       botao2.classList.add("hidden");
     }
+    
+}
+
+
+function whatsapp(){
+
+    let whatsappMsg = encodeURIComponent(`
+    Olá, gostaria de fazer o pedido:\n
+    - Prato: Frango Yin Yang\n
+    - Bebida: Coquinha Gelada\n
+    - Sobremesa: Pudim\n
+    Total: R$ ${total}
+    `);
+
+    location.href=(`https://wa.me/?text=` + whatsappMsg);
+
 }
