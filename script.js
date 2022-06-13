@@ -1,4 +1,7 @@
 let quantidade = 0;
+let botao = document.querySelector(".finalizeIncomplete");
+let finalizar = document.querySelector(".finalizeOrder");
+let total = 0;
 
 function onClick1(div){ 
    
@@ -30,7 +33,7 @@ function onClick2(div){
     FinalizarPedido(quantidade);
 }
 
-function onClick3(span){ 
+function onClick3(div){ 
    
     let elemento = document.querySelector(".select3");
 
@@ -38,23 +41,18 @@ function onClick3(span){
         elemento.classList.remove("select3");
         quantidade -= 1;
     } else{
-    span.classList.add("select3");
-    quantidade += 1;
+        div.classList.add("select3");
+        quantidade += 1;
     }
 
     FinalizarPedido(quantidade);
 }
 
-
-let botao = document.querySelector(".finalizeIncomplete");
-let botao2 = document.querySelector(".finalizeOrder");
-let total = 0;
-
 function FinalizarPedido(quantidade){
 
     if (quantidade == 3) {
         botao.classList.add("hidden");
-        botao2.classList.remove("hidden");
+        finalizar.classList.remove("hidden");
 
         let valor1 = document.querySelector(".select1 .valor").innerHTML;
         let valor2 = document.querySelector(".select2 .valor").innerHTML;
@@ -69,11 +67,10 @@ function FinalizarPedido(quantidade){
 
     } else {
        botao.classList.remove("hidden");
-       botao2.classList.add("hidden");
+       finalizar.classList.add("hidden");
     }
     
 }
-
 
 function whatsapp(){
 

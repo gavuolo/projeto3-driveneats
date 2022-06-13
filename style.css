@@ -65,10 +65,6 @@ h3{
     
 }
 
-span{
-   
-}
-
 .select-items{
     border-radius: 9px;
     padding: 20px;
@@ -88,9 +84,6 @@ ion-icon{
     opacity: 0;
 }
 
-
-
-
 /*Estilo dos textos dentro do select-items*/
 
 .select-food h3,
@@ -102,7 +95,7 @@ ion-icon{
     color: #A6A6A6;
     font-weight: 300;
     word-break: break-word;
-    padding: 10px 10px 0 0;
+    padding: 10px 10px 10px 0;
 }
 
 /*box inferior*/
@@ -197,5 +190,3 @@ ion-icon{
 .hidden{
     display: none;
 }
-
-
