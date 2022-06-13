@@ -19,11 +19,6 @@ h3{
     font-weight: 400;
 }
 
-/** {
-    box-sizing: border-box;
-}*/
-/*Viewport mobile*/
-
 /*Topo*/
 .top{
     background-color: #CF2B2B;
@@ -34,6 +29,7 @@ h3{
     position: fixed;
     top:0;
     bottom:0; 
+    z-index: 1;
 }
 
 .top h1, .top p{
@@ -52,7 +48,6 @@ h3{
 .boxtop{
     width: 100%;
     height: 92px;
-    z-index: 1;
 }
 
 /*Box prato principal*/
@@ -67,6 +62,11 @@ h3{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    
+}
+
+span{
+   
 }
 
 .select-items{
@@ -76,7 +76,6 @@ h3{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     margin: 0 10px 0 19px;  
     position: relative;
-    z-index: -1;
 }
 
 .scroll-items img{
@@ -89,35 +88,7 @@ ion-icon{
     opacity: 0;
 }
 
-.select1 ion-icon{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    color: #32B72F;
-    opacity: 100;
-}
 
-.select2 ion-icon{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    color: #32B72F;
-    opacity: 100;
-}
-
-.select3 ion-icon{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    color: #32B72F;
-    opacity: 100;
-}
 
 
 /*Estilo dos textos dentro do select-items*/
@@ -176,15 +147,7 @@ ion-icon{
     background-color: #CBCBCB;
 }
 
-
-.order-box button:nth-child(2){
-    background-color: #32B72F;
-}
-
-
 /*Selecionar prato JS*/
-
-
 .select1{
     border: 5px solid #32B72F;
     border-radius: 9px;
@@ -198,6 +161,36 @@ ion-icon{
 .select3{
     border: 5px solid #32B72F;
     border-radius: 9px;
+}
+
+.select1 ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #32B72F;
+    opacity: 100;
+}
+
+.select2 ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #32B72F;
+    opacity: 100;
+}
+
+.select3 ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #32B72F;
+    opacity: 100;
 }
 
 /*classe de esconder*/

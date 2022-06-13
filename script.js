@@ -1,6 +1,6 @@
 let quantidade = 0;
 
-function onClick1(span){ 
+function onClick1(div){ 
    
     let elemento = document.querySelector(".select1");
 
@@ -8,14 +8,14 @@ function onClick1(span){
         elemento.classList.remove("select1");
         quantidade -= 1;
     } else {
-    span.classList.add("select1");
-     quantidade += 1;
+        div.classList.add("select1");
+        quantidade += 1;
     }
     
     FinalizarPedido(quantidade);
 }
 
-function onClick2(span){ 
+function onClick2(div){ 
    
     let elemento = document.querySelector(".select2");
 
@@ -23,8 +23,8 @@ function onClick2(span){
         elemento.classList.remove("select2");
         quantidade -= 1;
     } else {
-    span.classList.add("select2");
-     quantidade += 1;
+        div.classList.add("select2");
+        quantidade += 1;
     }
 
     FinalizarPedido(quantidade);
